@@ -1,1 +1,30 @@
 line 1
+sarthak@sarthak MINGW64 /d/Git/testrepo (testbranch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+sarthak@sarthak MINGW64 /d/Git/testrepo (master)
+$ git merge testbranch
+Updating c766df3..6eefeb6
+Fast-forward
+ file3.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file3.txt
+
+sarthak@sarthak MINGW64 /d/Git/testrepo (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/Sarthakgupta2000/testrepo.git
+   c766df3..6eefeb6  master -> master
+
+sarthak@sarthak MINGW64 /d/Git/testrepo (master)
+$ git branch -d testbranch
+Deleted branch testbranch (was 6eefeb6).
+
+sarthak@sarthak MINGW64 /d/Git/testrepo (master)
+$ git push origin master
+Everything up-to-date
+
+sarthak@sarthak MINGW64 /d/Git/testrepo (master)
+$
